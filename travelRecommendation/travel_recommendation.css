@@ -104,12 +104,12 @@ nav a {
     padding: 10px 16px;
     border-radius: 9999px;
     font-size: 16px;
-    color: #006666;
+    color: #a7786a;
     width: 300px;
 }
 
 input::placeholder {
-    color: #006666;
+    color: #a7786a;
     font-weight: 400;
     font-size: large;
     font-family: "Noto Sans", sans-serif;
@@ -125,7 +125,7 @@ input::placeholder {
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    color: #006666;
+    color: #a7786a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +134,7 @@ input::placeholder {
 
 /* Action buttons (Search & Clear) */
 .action-btn {
-    background: #008080;
+    background: #a7786a;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -146,7 +146,7 @@ input::placeholder {
 }
 
 .action-btn:hover {
-    background: #006666;
+    background: #92695d;
 }
 
 /* Body */
@@ -264,7 +264,7 @@ input::placeholder {
 }
 
 .rectangle {
-    background-color: #00666683;
+    background-color: #966c5f;
     width: inherit;
     padding: 8px 24px 8px 24px;
     display: flex;
@@ -307,7 +307,7 @@ form input::placeholder {
 }
 
 form button {
-    background-color: #005353;
+    background-color: #966c5f;
     padding: 8px;
     width: 100%;
     opacity: 1;
