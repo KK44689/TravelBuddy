@@ -31,33 +31,45 @@
         <li><a href="./about_us.html" id="about">About Us</a></li>
         <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
       </ul>
-
-      <div class="search-container">
-        <input
-          type="text"
-          id="recommendationInput"
-          placeholder="Enter a destination or keyword"
-        />
-        <button class="icon-btn">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-        <button id="searchBtn" class="action-btn">Search</button>
-        <button id="resetSearchBtn" class="action-btn">Clear</button>
-      </div>
     </nav>
-    <div id="container" class="row">
+
+    <div class="row">
       <div class="vertical-line"></div>
       <div class="column">
-        <h1 class="text-title">Explore<br />Dream<br />Destination<br /></h1>
-        <p class="text-paragraph">
-          Discover the world like never before. From hidden gems in bustling
-          cities to serene escapes off the beaten path, our travel guides, tips,
-          and curated experiences help you plan journeys that create
-          unforgettable memories. Whether you’re chasing adventure, culture, or
-          relaxation, your next destination awaits.
-        </p>
+        <h1 class="text-title">Contact Us</h1>
+        <p class="text-paragraph">Get in touch</p>
+      </div>
+
+      <div class="column">
+        <form>
+          <label class="row text-paragraph" for="name">Name</label>
+          <input
+            type="text"
+            id="name-input"
+            class="row form-input"
+            placeholder="Enter your name..."
+          />
+
+          <label class="row text-paragraph" for="email">Email</label>
+          <input
+            type="text"
+            id="email-input"
+            class="row form-input"
+            placeholder="Enter your email..."
+          />
+
+          <label class="row text-paragraph" for="message">Message</label>
+          <textarea
+            type="text"
+            id="message-input"
+            class="row form-input"
+            placeholder="Enter your message..."
+            rows="5"
+          ></textarea>
+
+          <button>Submit</button>
+        </form>
       </div>
     </div>
-    <script src="./travel_recommendation.js"></script>
   </body>
 </html>

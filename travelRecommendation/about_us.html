@@ -29,24 +29,12 @@
       <ul>
         <li><a href="./travel_recommendation.html" id="home">Home</a></li>
         <li><a href="./about_us.html" id="about">About Us</a></li>
-        <li><a href="" id="contact">Contact Us</a></li>
+        <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
       </ul>
-
-      <div class="search-container">
-        <input
-          type="text"
-          id="recommendationInput"
-          placeholder="Enter a destination or keyword"
-        />
-        <button class="icon-btn">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-        <button id="searchBtn" class="action-btn">Search</button>
-        <button id="resetSearchBtn" class="action-btn">Clear</button>
-      </div>
     </nav>
-    <div id="container">
-      <div id="about-us-container">
+    <div id="about-us-container" class="row">
+      <div class="vertical-line"></div>
+      <div class="column">
         <h1 id="about-us-title" class="text-title">About Us</h1>
         <p id="about-us-detail" class="text-paragraph">
           <strong
@@ -66,30 +54,44 @@
           <strong>Join us, and start your next adventure today.</strong>
         </p>
       </div>
-      <div id="our-team-container">
+    </div>
+
+    <div id="our-team-container" class="row">
+      <div class="column">
         <h2 id="our-team-title" class="text-title">Our<br />Team</h2>
+      </div>
+
+      <div id="card-container" class="column">
         <div class="card">
           <div class="card-content">
-            <h3 class="card-title">John Doe</h3>
+            <h3 class="card-title">Aria Nakamura</h3>
             <p class="card-text">
               This is a short description or content inside the card.
+              <span class="rectangle">Founder & CEO</span>
             </p>
           </div>
+        </div>
+
+        <div class="card">
           <div class="card-content">
-            <h3 class="card-title">John Doe</h3>
+            <h3 class="card-title">Daniel Reyes</h3>
             <p class="card-text">
               This is a short description or content inside the card.
+              <span class="rectangle">Chief Operating Officer</span>
             </p>
           </div>
+        </div>
+
+        <div class="card">
           <div class="card-content">
-            <h3 class="card-title">John Doe</h3>
+            <h3 class="card-title">Ethan Zhang</h3>
             <p class="card-text">
               This is a short description or content inside the card.
+              <span class="rectangle">Lead Software Engineer</span>
             </p>
           </div>
         </div>
       </div>
-      <div class="vertical-line"></div>
     </div>
   </body>
 </html>

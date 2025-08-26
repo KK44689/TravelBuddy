@@ -150,11 +150,23 @@ input::placeholder {
 }
 
 /* Body */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 100px 0px 100px;
+    flex: 1;
+}
+
 .text-title {
     color: white;
-    position: absolute;
-    top: 25%;
-    left: 15%;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -165,9 +177,6 @@ input::placeholder {
 
 .text-paragraph {
     color: white;
-    position: absolute;
-    top: 70%;
-    left: 15%;
     font-weight: 400;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
@@ -190,9 +199,6 @@ input::placeholder {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 36px;
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 15%;
     font-weight: 400;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
@@ -207,9 +213,6 @@ input::placeholder {
 
 #about-us-title {
     color: white;
-    position: absolute;
-    top: 15%;
-    left: 15%;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -219,16 +222,18 @@ input::placeholder {
 }
 
 #our-team-container {
-    width: 100%;
-    position: absolute;
-    top: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 98px;
+    margin-bottom: 48px;
 }
 
 #our-team-container h2 {
     font-size: 400%;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .card {
@@ -245,9 +250,75 @@ input::placeholder {
     padding: 24px;
     border-radius: 16px;
     display: flex;
-    gap: 2px;
+    flex-direction: row;
+    gap: 20px;
+    min-width: 400px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-content {
-    width: 250px;
+    padding: 16px;
+}
+
+.rectangle {
+    background-color: #00666683;
+    width: inherit;
+    padding: 8px 24px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 8px;
+    border-radius: 8px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 24px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+form .row {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: inherit;
+    height: 48px;
+}
+
+.form-input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-size: medium;
+    color: rgba(240, 248, 255, 0.82);
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+form button {
+    background-color: #005353;
+    padding: 8px;
+    width: 100%;
+    opacity: 1;
+    border-radius: 8px;
+    border: none;
+    height: 48px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgba(240, 248, 255, 0.82);
+    font-size: medium;
+}
+
+#message-input {
+    height: 96px;
 }
