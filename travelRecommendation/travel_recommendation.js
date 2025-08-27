@@ -1,5 +1,6 @@
 const searchButton = document.getElementById("searchBtn");
-
+const clearButton = document.getElementById("");
+const cardContainer = document.getElementById("rec-card-container");
 
 function SearchRecommendation() {
     const input = document.getElementById("recommendationInput").value.toLowerCase();
@@ -40,8 +41,23 @@ function SearchRecommendation() {
                 new Map(results.map(item => [item.name, item])).values()
             );
 
-            console.log(result.filter(r => r.length != 0));
-        })
+            const filteredResult = result.filter(r => r.length != 0);
+            cardContainer.innerHTML = "";
+            filteredResult.forEach(result => {
+                cardContainer.innerHTML += `<div class="rec-card">
+          <img
+            src="${result.imageUrl}"
+            width="100%"
+          />
+          <div class="text-card">
+            <h1 class="card-title">${result.name}</h1>
+            <p class="card-description">${result.description}</p>
+            <button class="card-button">Visit</button>
+          </div>
+        </div>`
+            })
+        }
+        )
         .catch(error => {
             console.error('Error:', error);
         })
