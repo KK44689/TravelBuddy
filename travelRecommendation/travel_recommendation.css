@@ -61,6 +61,11 @@ nav a {
         "wdth" 100;
 }
 
+.nav-menu {
+    position: absolute;
+    left: 40%;
+}
+
 #planeIcon {
     font-variation-settings:
         'FILL' 0,

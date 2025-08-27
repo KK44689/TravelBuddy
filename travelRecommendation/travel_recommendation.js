@@ -1,5 +1,5 @@
 const searchButton = document.getElementById("searchBtn");
-const clearButton = document.getElementById("");
+const clearButton = document.getElementById("resetSearchBtn");
 const cardContainer = document.getElementById("rec-card-container");
 
 function SearchRecommendation() {
@@ -63,5 +63,10 @@ function SearchRecommendation() {
         })
 }
 
+function clearSearchResult() {
+    cardContainer.innerHTML = "";
+}
+
 // Add button event handler
 searchButton.addEventListener('click', SearchRecommendation);
+clearButton.addEventListener('click', clearSearchResult)
