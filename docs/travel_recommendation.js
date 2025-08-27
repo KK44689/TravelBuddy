@@ -26,13 +26,13 @@ function SearchRecommendation() {
             });
 
             data.temples.forEach(temple => {
-                if (temple.name.toLowerCase().includes(input) || temple.description.toLowerCase().includes(input)) {
+                if (input.includes("temple") || temple.name.toLowerCase().includes(input) || temple.description.toLowerCase().includes(input)) {
                     results.push(temple);
                 }
             });
 
             data.beaches.forEach(beach => {
-                if (beach.name.toLowerCase().includes(input) || beach.description.toLowerCase().includes(input)) {
+                if (input.includes("beach") || beach.name.toLowerCase().includes(input) || beach.description.toLowerCase().includes(input)) {
                     results.push(beach);
                 }
             });
